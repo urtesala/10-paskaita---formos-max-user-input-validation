@@ -1,0 +1,7 @@
+@import "reset.css";
+
+.errorFeedback {
+  color: tomato;
+  margin-bottom: 10px;
+  display: none;
+}

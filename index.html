@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- itraukiu javascript -->
+    <!-- <script src="./js/main.js" defer></script> -->
+    <!-- <script src="./js/createElementHelper.js" defer></script> -->
+    <script src="./js/forms.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Formos</h1>
+
+      form id="loginForm" autocomplete="off">
+      <input type="text" name="username" id="username" placeholder="Username" value="James">
+      <p class="errorFeedback">iveskite varda</p>
+      <input type="text" name="email" id="email" placeholder="email" value="james@bond.com">
+      <p class="errorFeedback">iveskite email</p>
+      <div>
+        <input type="checkbox" name="legal" id="legal">
+        <p class="errorFeedback">butinas sutikimas</p>
+        <label for="legal">Sutinku su salygomis *</label>
+      </div>
+      <fieldset id="timeRadio">
+        <legend>best time</legend>
+        <input type="radio" name="time" id="morning" value="morning">
+        <label for="morning">Morning</label>
+        <input type="radio" name="time" id="afternoon" value="afternoon">
+        <label for="afternoon">Afternoon</label>
+      </fieldset>
+      <button type="submit">Login</button>
+    </form>
+
+
+      <div id="app"></div>
+    </div>
+  </body>
+</html>
